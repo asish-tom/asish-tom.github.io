@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/asish-tom/asish-tom.github.io/static/css/main.8e63dc19.chunk.css",
+    "main.js": "/asish-tom/asish-tom.github.io/static/js/main.dbcf805a.chunk.js",
+    "main.js.map": "/asish-tom/asish-tom.github.io/static/js/main.dbcf805a.chunk.js.map",
+    "runtime-main.js": "/asish-tom/asish-tom.github.io/static/js/runtime-main.fbe288ef.js",
+    "runtime-main.js.map": "/asish-tom/asish-tom.github.io/static/js/runtime-main.fbe288ef.js.map",
+    "static/js/2.da631255.chunk.js": "/asish-tom/asish-tom.github.io/static/js/2.da631255.chunk.js",
+    "static/js/2.da631255.chunk.js.map": "/asish-tom/asish-tom.github.io/static/js/2.da631255.chunk.js.map",
+    "static/js/3.895e19fe.chunk.js": "/asish-tom/asish-tom.github.io/static/js/3.895e19fe.chunk.js",
+    "static/js/3.895e19fe.chunk.js.map": "/asish-tom/asish-tom.github.io/static/js/3.895e19fe.chunk.js.map",
+    "index.html": "/asish-tom/asish-tom.github.io/index.html",
+    "static/css/main.8e63dc19.chunk.css.map": "/asish-tom/asish-tom.github.io/static/css/main.8e63dc19.chunk.css.map",
+    "static/js/2.da631255.chunk.js.LICENSE.txt": "/asish-tom/asish-tom.github.io/static/js/2.da631255.chunk.js.LICENSE.txt",
+    "static/media/aws.e65a2ff1.svg": "/asish-tom/asish-tom.github.io/static/media/aws.e65a2ff1.svg",
+    "static/media/css.db9aeff3.svg": "/asish-tom/asish-tom.github.io/static/media/css.db9aeff3.svg",
+    "static/media/django.44315be7.svg": "/asish-tom/asish-tom.github.io/static/media/django.44315be7.svg",
+    "static/media/facebook.2a511f58.svg": "/asish-tom/asish-tom.github.io/static/media/facebook.2a511f58.svg",
+    "static/media/github.3f3c2ec9.svg": "/asish-tom/asish-tom.github.io/static/media/github.3f3c2ec9.svg",
+    "static/media/gopher.822c1f8f.svg": "/asish-tom/asish-tom.github.io/static/media/gopher.822c1f8f.svg",
+    "static/media/instagram.b8cec468.svg": "/asish-tom/asish-tom.github.io/static/media/instagram.b8cec468.svg",
+    "static/media/logo.6ce24c58.svg": "/asish-tom/asish-tom.github.io/static/media/logo.6ce24c58.svg",
+    "static/media/me.f26ec44b.jpg": "/asish-tom/asish-tom.github.io/static/media/me.f26ec44b.jpg",
+    "static/media/python.875c7081.svg": "/asish-tom/asish-tom.github.io/static/media/python.875c7081.svg",
+    "static/media/react.ec14741d.svg": "/asish-tom/asish-tom.github.io/static/media/react.ec14741d.svg",
+    "static/media/twitter.9e76f1cc.svg": "/asish-tom/asish-tom.github.io/static/media/twitter.9e76f1cc.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fbe288ef.js",
+    "static/js/2.da631255.chunk.js",
+    "static/css/main.8e63dc19.chunk.css",
+    "static/js/main.dbcf805a.chunk.js"
+  ]
+}
