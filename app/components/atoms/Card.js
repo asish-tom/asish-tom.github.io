@@ -1,17 +1,16 @@
 import React from 'react';
+import DOMPurify from 'dompurify';
 
 const Card = x => (
   <div className="card">
     <a href={x.projectLink || '#'}>
       <div className="header">{x.heading}</div>
-      {sanitize(x.paragraph)}
+      const mySafeHTML = DOMPurify.sanitize(myHTML);
+      <div
+        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(x.paragraph) }}
+      />
     </a>
   </div>
 );
-function sanitize(html) {
-  const doc = document.createElement('div');
-  doc.innerHTML = html;
-  return doc.innerHTML;
-}
 
 export default Card;
