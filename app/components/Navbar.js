@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 class Navbar extends React.Component {
-  toggleHam(prevState) {
-    this.setState({ isToggle: !prevState.isToggle }, () => {});
+  toggleHam() {
+    this.setState(prevState => ({ isToggle: !prevState.isToggle }));
   }
 
   constructor(props) {
