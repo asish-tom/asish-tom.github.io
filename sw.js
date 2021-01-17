@@ -39,11 +39,11 @@ var __wpo = {
     "737e93c0297d69c643c444efdcb519c744e85620": "/npm.redux-saga.b55e7b1d9b1a6307d557.chunk.js",
     "e1101f78dd92f1612936caf54f4712ef9f16da21": "/runtime.d90320853b2c54162662.js",
     "1bf213282292ce0a6ef62f4c9d17b385efcd4e56": "/12.e85530c1149c86b5e89e.chunk.js",
-    "ae929989d25748fbf168bc6ac0fec4afa961f58e": "/"
+    "e88594c8e409515f657675968ea5ab75164651b0": "/"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "1/18/2021, 1:42:11 AM",
+  "version": "1/18/2021, 1:51:07 AM",
   "name": "webpack-offline",
   "pluginVersion": "5.0.6",
   "relativePaths": false
