@@ -32,9 +32,9 @@ function Recommendation() {
                 <p className="pv-recommendation-entity__headline t-14 t-black t-normal pb1">
                   Tech Lead at Tech Lead at KreditBee(Finnovation tech
                   solutions)
-                  <p className="t-12 t-black--light t-normal">
-                    October 26, 2020, Geevarghese managed Asish directly
-                  </p>
+                </p>
+                <p className="t-12 t-black--light t-normal">
+                  October 26, 2020, Geevarghese managed Asish directly
                 </p>
               </div>
             </a>

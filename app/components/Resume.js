@@ -24,6 +24,7 @@ function Resume() {
             <VerticalTimeline className="timeline-outer" layout="1-column-left">
               {data.education.map(edu => (
                 <VerticalTimelineElement
+                  key={edu.id}
                   className="vertical-timeline-element--work"
                   contentStyle={{
                     background:
@@ -87,6 +88,7 @@ function Resume() {
             <VerticalTimeline className="timeline-outer" layout="1-column-left">
               {data.experiences.map(exp => (
                 <VerticalTimelineElement
+                  key={exp.id}
                   className="vertical-timeline-element--work"
                   contentStyle={{
                     background:
@@ -111,6 +113,7 @@ function Resume() {
                   <VerticalTimeline layout="1-column-left">
                     {exp.experienceOneMajorResponsibilities.map(resp => (
                       <VerticalTimelineElement
+                        key={resp.id}
                         className="vertical-timeline-element--work"
                         contentStyle={{
                           background: 'rgb(33, 150, 243)',
