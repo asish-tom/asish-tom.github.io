@@ -1,0 +1,129 @@
+@charset "utf-8";
+@import "./include-media.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
+
+// Atoms
+@import "./card.scss";
+
+// Components
+@import "./navbar.scss";
+@import "home";
+@import "blog";
+@import "resume";
+@import "./skills.scss";
+@import "./promotion.scss";
+@import "./footer.scss";
+@import "recomendation";
+
+* {
+  font-family: "Montserrat";
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-image: linear-gradient(to bottom right, #fadfdf, #f3f3d7, #9afc9b);
+}
+
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 4vh;
+  overflow: hidden;
+  @include media(">lgphone", "<=tablet") {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  @include media(">tablet", "<=desktop") {
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 85%;
+    float:right;
+  }
+  @include media(">desktop", "<=smdesktop") {
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 85%;
+    float:right;
+  }
+  @include media(">smdesktop", "<=mddesktop") {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 85%;
+    float:right;
+  }
+  @include media(">mddesktop", "<=lgdesktop") {
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 85%;
+    float:right;
+  }
+  @include media(">lgdesktop") {
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 85%;
+    float:right;
+  }
+}
+
+
+.nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sub-section {
+  display: block;
+}
+
+@include media(">=phone", "<lgphone") {
+  .nav-container {
+    margin-top: 0;
+    align-items: flex-start;
+  }
+}
+
+.primary-btn {
+  margin: 8px;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  border: 0px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  box-shadow: 10px 5px 5px black;
+
+  cursor: pointer;
+  font-size: 11px;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 5px 5px black;
+
+  }
+
+}
+
+p {
+  text-align: justify;
+  word-break: break-all;
+  hyphens: auto;
+  font-size: 14px;
+  @include media("<desktop") {
+    text-align: justify;
+    word-break: break-all;
+    hyphens: auto;
+    font-size: 12px;
+  }
+}
+
+

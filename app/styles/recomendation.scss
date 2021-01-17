@@ -1,0 +1,168 @@
+
+.recommendation {
+  .section-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include media("<tablet") {
+    .section-info {
+      display: flex !important;
+      flex-direction: column;
+
+      .pv-recommendation-entity__header {
+        width: auto;
+        word-break: break-word !important;
+      }
+
+      .pv-recommendation-entity__highlights {
+        width: auto;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .recommendation_details_profile {
+    align-items: center !important;
+    align-content: center !important;
+    text-align: center;
+  }
+
+  display: block;
+  margin: 0px;
+  align-items: flex-start;
+  align-content: flex-start;
+  text-align: left;
+
+  .pv-recommendation-entity:first-child {
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .pv-recommendation-entity {
+    margin-right: 0;
+    display: flex;
+    @include media("<tablet"){
+      display: flex;
+      flex-direction: column;
+    }
+    border-top: 1px solid #e6e9ec;
+    padding: 0px 0;
+  }
+  ul{
+      display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+  /* image settings */
+  .pv-recommendation-entity img {
+    border-radius: 50%
+  }
+
+  .pv-recommendation-entity__header {
+    width: 25%;
+  }
+
+  .pv-recommendation-entity__highlights {
+    width: 75%;
+    padding-left: 0px;
+    text-align: justify;
+
+  }
+
+  .pv-profile-wrapper a:visited {
+    color: #fff;
+  }
+
+  .pv-profile-wrapper a {
+    text-decoration: none;
+  }
+
+  .pv-recommendation-entity__member {
+    display: block;
+    overflow: auto;
+    text-decoration: none;
+  }
+
+  a.pv-recommendation-entity__member {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    border-bottom: 0px #fff;
+  }
+
+  /* name of recommending */
+  .t-16 {
+    padding-top: 0px;
+    font-size: .8rem;
+    line-height: 1;
+    word-break: normal;
+  }
+
+  /* title of recommending */
+  .t-14 {
+    font-size: 0.8rem;
+    line-height: 1;
+    word-break: normal;
+  }
+
+  /* date and relationship */
+  .t-12 {
+    font-size: 0.8rem;
+    line-height: 1;
+    word-break: normal;
+  }
+
+  /* more text styles */
+  .t-black {
+    color: rgba(0, 0, 0, .9);
+  }
+
+  .t-bold {
+    font-weight: 600;
+  }
+
+  .t-normal {
+    font-weight: 400;
+  }
+
+  .t-black--light {
+    color: rgba(0, 0, 0, .6);
+  }
+
+  /* sizing of recommendation text */
+  blockquote {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    font-weight: 200;
+    color: rgba(0, 0, 0, .75);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    quotes: "“" "”" "‘" "’";
+
+
+  }
+
+  blockquote, q {
+    quotes: "“" "”" "‘" "’";
+  }
+
+
+}
+
+.pv-recommendation-entity__member {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  font-size: 12px !important;
+  align-items: center;
+  text-align: center;
+}

@@ -1,0 +1,230 @@
+.about-section {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: scale-down;
+
+  .about-title {
+    text-align: center;
+  }
+
+  .exp-wrapper {
+    .exp-head {
+      text-align: start;
+      margin-bottom: 0px;
+      padding: 0px;
+      margin-top: 0px;
+      margin-block-start: 0px;
+      margin-block-end: 0px;
+
+    }
+
+    width: 50%;
+    margin-right: 10px;
+    @include media(">=phone", "<lgphone") {
+      width: 100%;
+    }
+    @include media(">=lgphone", "<tablet") {
+      width: 100%;
+    }
+    @include media(">=tablet", "<desktop") {
+      width: 100%;
+    }
+  }
+
+  .experience-grid {
+    display: flex;
+    @include media(">=phone", "<lgphone") {
+      display: block;
+    }
+    @include media(">=lgphone", "<tablet") {
+      display: block;
+    }
+    @include media(">=tablet", "<desktop") {
+      width: 100%;
+    }
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 4px;
+    @include media(">=tablet", "<desktop") {
+      text-align: center;
+    }
+  }
+
+  .responsibilities {
+    margin-left: 40px;
+  }
+}
+
+.me {
+  height: 500px;
+}
+
+.bio-details {
+  margin: 30px;
+}
+
+.timeline {
+  font-size: 12px;
+  text-align: left;
+
+  .vertical-timeline-element {
+    width: auto;
+  }
+
+  .vertical-timeline-element-content {
+
+    padding: .5em;
+  }
+
+  .vertical-timeline-element-content p {
+    font-size: .6rem;
+  }
+
+  .vertical-timeline-element-content .vertical-timeline-element-date {
+    font-size: 0.525rem;
+  }
+}
+
+.timeline-outer {
+  //width: 80vw !important;
+}
+
+@include media("<lgphone") {
+  .timeline {
+    font-size: 12px;
+  }
+  .vertical-timeline-element-icon {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+  }
+  .vertical-timeline-element {
+    position: relative;
+    margin: 1em 0;
+  }
+  .vertical-timeline {
+    padding: 1.5em 0;
+  }
+  .vertical-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 7px;
+    height: 100%;
+    width: 1px;
+    background: #fff;
+  }
+  .vertical-timeline-element-content {
+    position: relative;
+    margin-left: 25px;
+  }
+}
+
+@include media(">=lgphone") {
+  .vertical-timeline-element-icon {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  .vertical-timeline-element {
+    position: relative;
+    margin: 1em 0;
+  }
+  .vertical-timeline {
+    padding: 1.5em 0;
+  }
+  .vertical-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 7px;
+    height: 100%;
+    width: 1px;
+    background: #fff;
+  }
+  .vertical-timeline-element-content {
+    position: relative;
+    margin-left: 25px;
+  }
+}
+
+@include media("<=922") {
+  .vertical-timeline-element-icon {
+    width: 16px;
+    height: 16px;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: 25px;
+
+  }
+}
+
+@include media(">923", "<=1052") {
+  .vertical-timeline-element-icon {
+    width: 16px;
+    height: 16px;
+    left: 0;
+    margin-left: 0;
+    margin-top: 25px;
+
+  }
+}
+
+@include media(">1052") {
+
+}
+
+.exp-edu-grid {
+  position: relative;
+  float: left;
+
+  .sub-section {
+    width: 100%;
+    mso-padding-between: 20px;
+    position: relative;
+    display: block;
+    float: left;
+  }
+
+  width: 100%;
+  @include media(">tablet", "<lgdesktop") {
+    display: grid;
+    float: left;
+    position: relative;
+
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(500px, auto);
+    padding: 10px;
+  }
+  @include media(">lgdesktop") {
+
+    grid-template-columns: 33% auto 33%;
+    gap: 10px;
+     display: grid;
+    float: left;
+    position: relative;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(500px, auto);
+    padding: 10px;
+
+  }
+
+}
+
+@include media(">tablet", "<smdesktop") {
+  //.exp-edu-grid div :first-child{
+  //  grid-row: 2;
+  //}
+}
+

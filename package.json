@@ -1,70 +1,17 @@
 {
-  "name": "react-boilerplate",
-  "version": "4.0.0",
-  "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
-  },
-  "engines": {
-    "npm": ">=5",
-    "node": ">=8.15.1"
-  },
-  "author": "Max Stoiber",
-  "license": "MIT",
-  "scripts": {
-    "analyze:clean": "rimraf stats.json",
-    "preanalyze": "npm run analyze:clean",
-    "analyze": "node ./internals/scripts/analyze.js",
-    "extract-intl": "node ./internals/scripts/extract-intl.js",
-    "npmcheckversion": "node ./internals/scripts/npmcheckversion.js",
-    "preinstall": "npm run npmcheckversion",
-    "prebuild": "npm run build:clean",
-    "build": "cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
-    "build:clean": "rimraf ./build",
-    "start": "cross-env NODE_ENV=development node server",
-    "start:tunnel": "cross-env NODE_ENV=development ENABLE_TUNNEL=true node server",
-    "start:production": "npm run test && npm run build && npm run start:prod",
-    "start:prod": "cross-env NODE_ENV=production node server",
-    "presetup": "npm i chalk shelljs",
-    "setup": "node ./internals/scripts/setup.js",
-    "clean": "shjs ./internals/scripts/clean.js",
-    "clean:all": "npm run analyze:clean && npm run test:clean && npm run build:clean",
-    "generate": "plop --plopfile internals/generators/index.js",
-    "lint": "npm run lint:js && npm run lint:css",
-    "lint:css": "stylelint app/**/*.js",
-    "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts",
-    "lint:eslint:fix": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts --fix",
-    "lint:js": "npm run lint:eslint -- . ",
-    "lint:staged": "lint-staged",
-    "pretest": "npm run test:clean && npm run lint",
-    "test:clean": "rimraf ./coverage",
-    "test": "cross-env NODE_ENV=test jest --coverage",
-    "test:watch": "cross-env NODE_ENV=test jest --watchAll",
-    "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "prettify": "prettier --write"
-  },
+  "author": "Asish Tom",
+  "homepage": "https://www.asishtom.dev",
   "browserslist": [
     "last 2 versions",
     "> 1%",
     "IE 10"
   ],
-  "lint-staged": {
-    "*.js": [
-      "npm run lint:eslint:fix",
-      "git add --force"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add --force"
-    ]
-  },
-  "pre-commit": "lint:staged",
-  "resolutions": {
-    "babel-core": "7.0.0-bridge.0"
-  },
   "dependencies": {
     "@babel/polyfill": "7.4.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "axios": "^0.21.1",
     "chalk": "^2.4.2",
     "compression": "1.7.4",
     "connected-react-router": "6.4.0",
@@ -85,13 +32,17 @@
     "react-helmet": "6.0.0-beta",
     "react-intl": "2.8.0",
     "react-redux": "7.0.2",
+    "react-reveal": "^1.2.2",
     "react-router-dom": "5.0.0",
+    "react-sweet-progress": "^1.1.2",
+    "react-vertical-timeline-component": "^3.3.1",
     "redux": "4.0.1",
     "redux-saga": "1.0.2",
     "reselect": "4.0.0",
     "sanitize.css": "8.0.0",
     "styled-components": "4.2.0"
   },
+  "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
   "devDependencies": {
     "@babel/cli": "7.4.3",
     "@babel/core": "7.4.3",
@@ -129,6 +80,7 @@
     "eslint-plugin-react-hooks": "1.6.0",
     "eslint-plugin-redux-saga": "1.0.0",
     "file-loader": "3.0.1",
+    "gh-pages": "^3.1.0",
     "html-loader": "0.5.5",
     "html-webpack-plugin": "3.2.0",
     "image-webpack-loader": "4.6.0",
@@ -139,6 +91,7 @@
     "lint-staged": "8.1.5",
     "ngrok": "3.1.1",
     "node-plop": "0.18.0",
+    "node-sass": "^5.0.0",
     "null-loader": "0.1.1",
     "offline-plugin": "5.0.6",
     "plop": "2.3.0",
@@ -148,6 +101,7 @@
     "react-test-renderer": "16.8.6",
     "react-testing-library": "6.1.2",
     "rimraf": "2.6.3",
+    "sass-loader": "^10.1.1",
     "shelljs": "^0.8.3",
     "style-loader": "0.23.1",
     "stylelint": "10.0.1",
@@ -163,5 +117,62 @@
     "webpack-hot-middleware": "2.24.3",
     "webpack-pwa-manifest": "4.0.0",
     "whatwg-fetch": "3.0.0"
-  }
+  },
+  "engines": {
+    "npm": ">=5",
+    "node": ">=8.15.1"
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:eslint:fix",
+      "git add --force"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add --force"
+    ]
+  },
+  "name": "react-boilerplate",
+  "pre-commit": "lint:staged",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
+  },
+  "scripts": {
+    "analyze:clean": "rimraf stats.json",
+    "preanalyze": "npm run analyze:clean",
+    "analyze": "node ./internals/scripts/analyze.js",
+    "extract-intl": "node ./internals/scripts/extract-intl.js",
+    "npmcheckversion": "node ./internals/scripts/npmcheckversion.js",
+    "preinstall": "npm run npmcheckversion",
+    "prebuild": "npm run build:clean",
+    "build": "cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.babel.js --color -p --progress --hide-modules --display-optimization-bailout",
+    "build:clean": "rimraf ./build",
+    "start": "cross-env NODE_ENV=development node server",
+    "start:tunnel": "cross-env NODE_ENV=development ENABLE_TUNNEL=true node server",
+    "start:production": "npm run test && npm run build && npm run start:prod",
+    "start:prod": "cross-env NODE_ENV=production node server",
+    "presetup": "npm i chalk shelljs",
+    "setup": "node ./internals/scripts/setup.js",
+    "clean": "shjs ./internals/scripts/clean.js",
+    "clean:all": "npm run analyze:clean && npm run test:clean && npm run build:clean",
+    "generate": "plop --plopfile internals/generators/index.js",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:css": "stylelint app/**/*.js",
+    "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts",
+    "lint:eslint:fix": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts --fix",
+    "lint:js": "npm run lint:eslint -- . ",
+    "lint:staged": "lint-staged",
+    "pretest": "npm run test:clean && npm run lint",
+    "test:clean": "rimraf ./coverage",
+    "test": "cross-env NODE_ENV=test jest --coverage",
+    "test:watch": "cross-env NODE_ENV=test jest --watchAll",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "prettify": "prettier --write"
+  },
+  "version": "4.0.0"
 }
