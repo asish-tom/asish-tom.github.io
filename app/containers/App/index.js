@@ -15,9 +15,10 @@ import Layout from '../../components/layout';
 import Footer from '../../components/Footer';
 import Home from '../../components/Home';
 import Resume from '../../components/Resume';
-import Skills from '../../components/skills';
 import Blog from '../../components/Blog';
-import Promotion from '../../components/Promotion';
+import Credits from '../../components/Credits';
+import Contact from '../../components/Contact';
+import Gallery from '../../components/Gallary';
 
 export default function App() {
   return (
@@ -30,10 +31,11 @@ export default function App() {
               <Redirect to="/home" />
             </Route>
             <Route path="/home" component={Home} />
-            <Route path="/about" component={Resume} />
-            <Route path="/skills" component={Skills} />
+            <Route path="/resume" component={Resume} />
             <Route path="/blog" component={Blog} />
-            <Route path="/promo" component={Promotion} />
+            <Route path="/credit" component={Credits} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/gallery" component={Gallery} />
           </Switch>
           <Footer />
         </div>

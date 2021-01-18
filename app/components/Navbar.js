@@ -48,7 +48,7 @@ class Navbar extends React.Component {
             <NavLink
               className="link-selector"
               activeClassName="active"
-              to="/about"
+              to="/resume"
               onClick={this.toggleHam}
             >
               RESUME
@@ -60,6 +60,30 @@ class Navbar extends React.Component {
               onClick={this.toggleHam}
             >
               BLOG
+            </NavLink>
+            <NavLink
+              className="link-selector"
+              activeClassName="active"
+              to="/credit"
+              onClick={this.toggleHam}
+            >
+              CREDITS
+            </NavLink>
+            <NavLink
+              className="link-selector"
+              activeClassName="active"
+              to="/contact"
+              onClick={this.toggleHam}
+            >
+              CONTACT
+            </NavLink>
+            <NavLink
+              className="link-selector"
+              activeClassName="active"
+              to="/gallery"
+              onClick={this.toggleHam}
+            >
+              GALLERY
             </NavLink>
           </div>
         </div>
